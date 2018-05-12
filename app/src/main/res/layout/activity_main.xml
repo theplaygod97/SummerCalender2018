@@ -7,16 +7,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-
     tools:openDrawer="start">
-
-
 
     <include
         layout="@layout/content_nav"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <include
+            layout="@layout/toolbar_main"
+            android:id="@+id/toolbar" />
+    </LinearLayout>
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
@@ -31,7 +35,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="290dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAlignment="center"
