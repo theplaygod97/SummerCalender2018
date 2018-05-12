@@ -7,7 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+
     tools:openDrawer="start">
+
+
 
     <include
         layout="@layout/content_nav"
@@ -22,7 +25,22 @@
         android:fitsSystemWindows="true"
         android:layout_marginLeft="120dp"
         app:headerLayout="@layout/nav_header_nav"
-        app:menu="@menu/activity_nav_drawer" />
+        app:menu="@menu/activity_nav_drawer">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="https://github.com/theplaygod97/SummerCalender2018"
+        android:clickable="true"
+        android:autoLink="all"/>
+
+</android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
 

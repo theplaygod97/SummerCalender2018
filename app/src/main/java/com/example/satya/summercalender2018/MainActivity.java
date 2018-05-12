@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
     CalendarView calendarView;
 
         calendarView = (CalendarView) findViewById(R.id.simpleCalendarView); // get the reference of CalendarView
