@@ -1,34 +1,26 @@
 package com.example.satya.summercalender2018;
 
-import android.app.AlarmManager;
+
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Color;
-import android.icu.text.SimpleDateFormat;
+
 import android.os.Build;
-import android.os.PersistableBundle;
+
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.widget.Toolbar;
+
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CalendarView;
-import android.widget.EditText;
+
 import android.widget.Toast;
-import android.app.Notification;
+
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.support.v4.view.GravityCompat;
-import android.app.TaskStackBuilder;
-import android.content.Context;
-import android.content.Intent;
 
-import java.util.Calendar;
-import java.util.Comparator;
-import java.util.Date;
-
-import static java.util.logging.Logger.global;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -66,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 String S3="Reasoning - E 414";
                 String S4="English 1 - E 514";
                 String S5="English 2 - E 515";
-                String S6="INTERSHIP";
+                String S6="INTERNSHIP";
                 String S7="NO CLASSES";
                 // display the selected date by using a toast
 
@@ -190,8 +182,8 @@ public class MainActivity extends AppCompatActivity {
         notification.setSmallIcon(R.drawable.ic_event_available_black_24dp);
         notification.setTicker("Notifier");
         notification.setWhen(System.currentTimeMillis());
-        notification.setContentTitle("PPT CLASS"+" "+w+"/"+ (x+1) + "/" + y + " " + z);
-        notification.setContentText( "At 3.00 PM");
+        notification.setContentTitle(w + "/" + (x+1) + "/" + y + " " +"PPT CLASS");
+        notification.setContentText( z + " " +"At 3.00 PM");
 
         Intent intent = new Intent(this, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -208,8 +200,8 @@ public class MainActivity extends AppCompatActivity {
         notification.setSmallIcon(R.drawable.ic_event_busy_black_24dp);
         notification.setTicker("This is the ticker");
         notification.setWhen(System.currentTimeMillis());
-        notification.setContentTitle("NO PPT CLASS"+" "+w+"/"+ (x+1) + "/" + y + " " + z);
-        notification.setContentText( "Enjoy");
+        notification.setContentTitle(w + "/" + (x+1) + "/" + y + " " +"NO PPT CLASS");
+        notification.setContentText( z + " " +"Enjoy");
 
         Intent intent = new Intent(this, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -227,8 +219,8 @@ public class MainActivity extends AppCompatActivity {
         notification.setSmallIcon(R.drawable.ic_event_note_black_24dp);
         notification.setTicker("This is the ticker");
         notification.setWhen(System.currentTimeMillis());
-        notification.setContentTitle("INTERNSHIP "+" "+w+"/"+ (x+1) + "/" + y + " " + z);
-        notification.setContentText( "9:00 AM - 5:00 PM");
+        notification.setContentTitle(w + "/" + (x+1) + "/" + y + " " +"INTERNSHIP ");
+        notification.setContentText( z + " " +"9:00 AM - 5:00 PM");
 
         Intent intent = new Intent(this, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
