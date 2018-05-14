@@ -5,16 +5,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class SplashActivity extends AppCompatActivity {
-
-
+    LinearLayout T1,T2;
+    Animation updown,downup;
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+        T1 = (LinearLayout) findViewById(R.id.T1);
+        T2 = (LinearLayout) findViewById(R.id.T2);
+        updown = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.up_down);
+        downup = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down_up);
+        T1.setAnimation(updown);
+        T2.setAnimation(downup);
 
         final String[] Quotes={"You may have to fight a battle more than once to win it. - Margaret Thatcher",
                 "As we look ahead into the next century, leaders will be those who empower others. - Bill Gates",
@@ -44,5 +53,7 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
             }
         }, 2500);
+
     }
+
 }
