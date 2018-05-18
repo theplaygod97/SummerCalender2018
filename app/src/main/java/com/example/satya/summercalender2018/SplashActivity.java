@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Slide;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
@@ -18,6 +21,7 @@ public class SplashActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+
         T1 = (LinearLayout) findViewById(R.id.T1);
         T2 = (LinearLayout) findViewById(R.id.T2);
         updown = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.up_down);
@@ -55,5 +59,6 @@ public class SplashActivity extends AppCompatActivity {
         }, 2500);
 
     }
+
 
 }
