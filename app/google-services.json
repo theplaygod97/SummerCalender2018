@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "972564120949",
+    "firebase_url": "https://summercalender2018.firebaseio.com",
+    "project_id": "summercalender2018",
+    "storage_bucket": "summercalender2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972564120949:android:8e106456a02637d1",
+        "android_client_info": {
+          "package_name": "com.example.satya.summercalender2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972564120949-pf6kht85iuo11gc0p2m3ms22l1h2ucff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.satya.summercalender2018",
+            "certificate_hash": "b0578311c7b432292ce86ea4ab02e2159215216f"
+          }
+        },
+        {
+          "client_id": "972564120949-dp8m7hp8pamfnat4fan9bfp0j282h86d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmuH48mFtUgpn9QZBuccBSu2A23NdSWwU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972564120949-dp8m7hp8pamfnat4fan9bfp0j282h86d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

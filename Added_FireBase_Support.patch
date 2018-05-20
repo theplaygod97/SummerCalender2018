@@ -1,0 +1,83 @@
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision 50a29c0993e0c7147dffa76d64f0d3efdf4889b7)
++++ app/build.gradle	(date 1526098276984)
+@@ -23,8 +23,12 @@
+     implementation 'com.android.support:appcompat-v7:26.1.0'
+     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+     implementation 'com.android.support:design:26.1.0'
++    implementation 'com.google.firebase:firebase-core:11.8.0'
++    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+     testImplementation 'junit:junit:4.12'
+     androidTestImplementation 'com.android.support.test:runner:1.0.1'
+     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+ 
+ }
++
++apply plugin: 'com.google.gms.google-services'
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 50a29c0993e0c7147dffa76d64f0d3efdf4889b7)
++++ .idea/misc.xml	(date 1526098191123)
+@@ -24,7 +24,7 @@
+       </value>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(revision 50a29c0993e0c7147dffa76d64f0d3efdf4889b7)
++++ .gitignore	(date 1526095667140)
+@@ -3,7 +3,8 @@
+ /local.properties
+ /.idea/workspace.xml
+ /.idea/libraries
++.idea
+ .DS_Store
+ /build
+ /captures
+-.externalNativeBuild
++.externalNativeBuild
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 50a29c0993e0c7147dffa76d64f0d3efdf4889b7)
++++ build.gradle	(date 1526098089381)
+@@ -12,6 +12,7 @@
+ 
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
++        classpath 'com.google.gms:google-services:3.1.1'
+     }
+ }
+ 
+diff --git .idea/caches/build_file_checksums.ser .idea/caches/build_file_checksums.ser
+index bd77979bd35127d249c7e7ffb0cd42bf382a7912..bc265dddd72643894c7ae03234d9d890855fd8b2
+GIT binary patch
+literal 537
+zc${1FmVvdnh`~NNKUXg?FQq6yGexf?KR>5fFEb@IQ7^qHF(oHeub?PDD>b=9F91S2
+zm1gFoxMk*~I%lLNXBU^|7Q2L-Ts|(GuF1r}<i#MFTj`TnT;dMa8(f)}9Fm!vT3nKt
+zTj0aMpIeEdv4nx&Co8cmQNOe#Ge_SyvB0{bfPsNAIjH+;4A5PIAUQpdoSsKwaRyMH
+zmHpPi!(s^+nHiYe7`Srs6I0w0lS}f8JQ+AkGKx}*GxBp%Dhli!7(jrhoC8P-05Mw$
+zgFs?IK}-_J=}>Q#7BMhIJFWRF{)3Gp<N*@{1ITIyf#U0J+j4zee19d2NS~WOS0Cua
+z;?$Co%)Insn8reeItDh7+Icq<_SxKL&(lrNlL~h_ys(6U2gL@s!fMtdwTxwviGMiM
+zWvomuDwQy3I9tVp7N-^!#{@fuL^{SmwZtHTydbrxBr~-bVaOHPo}2v)n^;~paL#!1
+z!>JDFr=0xc#2l=O=NetPvo||c^rzr?NtRDVS4tQJ@ff{N;Lm{)|BPDitr?w#jf;XR
+E05<-)eE<Le
+
