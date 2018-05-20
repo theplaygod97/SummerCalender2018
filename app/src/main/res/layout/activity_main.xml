@@ -20,7 +20,12 @@
         <include
             layout="@layout/toolbar_main"
             android:id="@+id/toolbar" />
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
+
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
@@ -29,20 +34,8 @@
         android:fitsSystemWindows="true"
         android:layout_marginLeft="120dp"
         app:headerLayout="@layout/nav_header_nav"
-        app:menu="@menu/activity_nav_drawer">
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="290dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="https://github.com/theplaygod97/SummerCalender2018"
-        android:clickable="true"
-        android:autoLink="all"/>
+        app:menu="@menu/activity_nav_drawer"
+        >
 
 </android.support.design.widget.NavigationView>
 

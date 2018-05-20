@@ -1,19 +1,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#263238"
+    android:orientation="vertical"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@drawable/bgmainland"
     tools:context=".MainActivity">
 
     <!-- CalendarView with monday as first day and minmal and maximal day -->
     <CalendarView
         android:id="@+id/simpleCalendarView"
-        android:layout_width="fill_parent"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView2"
@@ -21,14 +23,38 @@
         android:background="#789"
         android:firstDayOfWeek="2"
         android:maxDate="06/30/2018"
-        android:minDate="05/01/2018" />
+        android:minDate="05/01/2018"
+        tools:ignore="UnknownId" />
 
-    <Button
+    <ImageButton
         android:id="@+id/onClickAlarm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44sp"
+        android:layout_height="44sp"
+        android:layout_alignEnd="@+id/simpleCalendarView"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:text="Alarm" />
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/ic_alarm_clock"
+        android:padding="5dp"
+       />
 
+    <android.support.v7.widget.CardView
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_alignStart="@+id/simpleCalendarView"
+        android:layout_alignTop="@+id/onClickAlarm"
+        android:background="#202020"
+        android:backgroundTint="#202020"
+        app:cardCornerRadius="12dp">
+
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="#202020"
+            android:hint="@string/click_on_any_date"
+            android:textColor="#00C040"
+            android:textColorHint="#00C040"
+            android:textSize="18sp" />
+    </android.support.v7.widget.CardView>
 </RelativeLayout>

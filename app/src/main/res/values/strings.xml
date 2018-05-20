@@ -8,6 +8,10 @@
     <string name="action_settings">Settings</string>
     <string name="channel_name">SummerCalender2018</string>
     <string name="channel_description">SummerCalender2018</string>
+    <string name="click_on_any_date">Click on any date</string>
+    <string name="description">An open source calender app which displays about the events and classes for the summer session of ECE-A.</string>
+    <string name="flaticon">Icons from flaticons www.flaticons.com</string>
+    <string name="con">Contact</string>
     <string-array name="Quotes">"You may have to fight a battle more than once to win it. - Margaret Thatcher",
         "As we look ahead into the next century, leaders will be those who empower others. - Bill Gates",
         "Innovation distinguishes between a leader and a follower. - Steve Jobs",
@@ -22,4 +26,11 @@
         "Certain things catch your eye, but pursue only those that capture the heart. – Ancient Indian Proverb",
         "It’s not the years in your life that count. It’s the life in your years. – Abraham Lincoln",
         "Inspire Others."</string-array>
+    <string name="FAQ">Frequently asked Questions
+        \nCompatible Android Version - 5.0 + (lollipop +)
+    \nTested on Android M (Emulator - Pixel)
+    \nAlarm works only for the ongoing week,means you
+    \ncan set it for present day or upcoming days of
+    \nweek only.
+    \nDates and events as per the provided timetable.</string>
 </resources>
