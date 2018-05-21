@@ -20,6 +20,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.Explode;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 case R.id.nav_about:
                                     Intent intent = new Intent(MainActivity.this, AboutFragment.class);
-                                    overridePendingTransition(R.anim.slidein,R.anim.slideout);
+                                    //overridePendingTransition(R.anim.slidein,R.anim.slideout);
                                     startActivity(intent);
                                     finish();
                                     item.setChecked(true);
@@ -98,21 +99,21 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.nav_share:
                                 Intent sendIntent = new Intent();
                                 sendIntent.setAction(Intent.ACTION_SEND);
-                                sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+                                sendIntent.putExtra(Intent.EXTRA_TEXT, "https://drive.google.com/open?id=1o3dLT1QcxJpBJ_GxvexBRB67UzrYodpG");
                                 sendIntent.setType("text/plain");
                                 startActivity(sendIntent);
                                 item.setChecked(true);
                                 break;
 
                             case R.id.nav_git:
-                                Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+                                Uri uri = Uri.parse("https://github.com/theplaygod97/SummerCalender2018"); // missing 'http://' will cause crashed
                                 Intent Linkintent = new Intent(Intent.ACTION_VIEW, uri);
                                 startActivity(Linkintent);
                                 item.setChecked(true);
                                 break;
 
                             case R.id.nav_feedback:
-                                Uri uri1 = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+                                Uri uri1 = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSe-JCL5ZQlNHSegedLTa2KzTL7T6dlUw-vzzoo9fUJP__AsNw/viewform"); // missing 'http://' will cause crashed
                                 Intent Linkintent1 = new Intent(Intent.ACTION_VIEW, uri1);
                                 startActivity(Linkintent1);
                                 item.setChecked(true);
@@ -203,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
                         int thisDay = cal.get(Calendar.DAY_OF_MONTH);
 
                         int hourofday = cal.get(Calendar.HOUR_OF_DAY);
-                        if (thisDay==dayOfMonth&&(hourofday >= 13 && hourofday <= 24)) {        // Creating alert Dialog with two Buttons
+                        if (thisDay==dayOfMonth&&(hourofday >= 15 && hourofday <= 17)) {        // Creating alert Dialog with two Buttons
 
                             AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
 
@@ -214,13 +215,13 @@ public class MainActivity extends AppCompatActivity {
                             alertDialog.setMessage("Three o’clock is always too late or too early for anything you want to do.\nEither u missed today's class or you are too early for the next one.");
 
                             // Setting Positive "Yes" Button
-                            alertDialog.setPositiveButton("HMMMM",
+                            alertDialog.setPositiveButton("HMMMM,OK",
                                     new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog, int which) {
 
                                             Toast T=new Toast(getApplicationContext());
                                             ImageView view = new ImageView(getApplicationContext());
-                                            view.setImageResource(R.drawable.ic_code_black_24dp);
+                                            view.setImageResource(R.drawable.ic_warning_black_24dp);
                                             T.setView(view);
                                             T.show();
 
@@ -253,6 +254,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // display the selected date by using a toast
                 Toast toast = new Toast(getApplicationContext());
+                toast.setGravity((Gravity.TOP),0,180);
                 ImageView im1 = new ImageView(getApplicationContext());
                 im1.setImageResource(R.drawable.ic_blackboard_1);
                 ImageView im2 = new ImageView(getApplicationContext());
@@ -415,6 +417,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder  notification = new NotificationCompat.Builder(this,uniqueID);
         //Build the notification
         notification.setSmallIcon(R.drawable.ic_event_available_black_24dp);
+
         notification.setTicker("Notifier");
         notification.setWhen(System.currentTimeMillis());
         notification.setContentTitle(w + "/" + (x+1) + "/" + y + " " +"PPT CLASS");

@@ -22,11 +22,11 @@ public class AboutFragment extends AppCompatActivity {
         setContentView(R.layout.about);
 
 
-        overridePendingTransition(R.anim.fadein, R.anim.fadeoutr);
+        //overridePendingTransition(R.anim.fadein, R.anim.fadeoutr);
         R1 = (RelativeLayout) findViewById(R.id.R1);
         updown = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.up_down);
         downup = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down_up);
-        R1.setAnimation(updown);
+        //R1.setAnimation(updown);
 
 
         ImageView img = (ImageView)findViewById(R.id.fb);
@@ -35,7 +35,7 @@ public class AboutFragment extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("http://fb.com"));
+                intent.setData(Uri.parse("https://www.facebook.com/satya.theplaygod97"));
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class AboutFragment extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("http://linkedn.com"));
+                intent.setData(Uri.parse("https://www.linkedin.com/in/satyabrat-sahoo-303238111/"));
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class AboutFragment extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("http://github.com"));
+                intent.setData(Uri.parse("https://github.com/theplaygod97"));
                 startActivity(intent);
             }
         });
@@ -68,7 +68,7 @@ public class AboutFragment extends AppCompatActivity {
         Intent intent = new Intent(AboutFragment.this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        overridePendingTransition(R.anim.animenter, R.anim.animleave);
+        //overridePendingTransition(R.anim.animenter, R.anim.animleave);
         startActivity(intent);
         finish();
 

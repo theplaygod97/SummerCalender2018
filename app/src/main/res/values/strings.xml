@@ -27,10 +27,10 @@
         "It’s not the years in your life that count. It’s the life in your years. – Abraham Lincoln",
         "Inspire Others."</string-array>
     <string name="FAQ">Frequently asked Questions
-        \nCompatible Android Version - 5.0 + (lollipop +)
-    \nTested on Android M (Emulator - Pixel)
-    \nAlarm works only for the ongoing week,means you
-    \ncan set it for present day or upcoming days of
-    \nweek only.
-    \nDates and events as per the provided timetable.</string>
+    \n1.Compatible Android Version - 5.0+ (L)
+    \n2.Tested on Android M (Emulator - Pixel)
+    \n3.Alarm works only for the ongoing week,
+    \n  means you can set it for present day
+    \n  or upcoming days of week only.
+    \n4.Dates and events as per timetable.</string>
 </resources>

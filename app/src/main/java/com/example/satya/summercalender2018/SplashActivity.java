@@ -39,10 +39,22 @@ public class SplashActivity extends AppCompatActivity {
                 ,"Whether you think you can or you think you can’t, you’re right. – Henry Ford",
                 "Certain things catch your eye, but pursue only those that capture the heart. – Ancient Indian Proverb",
                 "It’s not the years in your life that count. It’s the life in your years. – Abraham Lincoln",
-                "Inspire Others."};
+                "Inspire Others.","Never lose hope.You never know what tomorrow may bring."
+                ,"Walk a mile to avoid a fight,but when one starts,don't back an inch."
+                ,"Expect the unexpected and whenever possible,be the unexpected."
+                ,"Be silent,when you don't have all the facts."
+                ,"Sometimes to go far,you have to go alone."
+                ,"Hope but never expect.Look forward but never wait."
+                ,"Everything is temporary,just flow with it."
+                ,"Honesty is a very expensive gift."
+                ,"Learn to wait."
+                ,"When they treat u like joke,leave them like it's funny."
+                ,"When u build in silence,people don't know what to attack."
+                ,"Learn to accept what is,let go of what as,have faith in what will be."
+                ,"Work hard and be patient,your time will come."};
 
         final TextView Text1=(TextView)findViewById(R.id.textView3);
-        int rand1=(int)(Math.random()*14);
+        int rand1=(int)(Math.random()*27);
         Text1.setText(Quotes[rand1]);
 
         Handler handler = new Handler();

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#263238"
+    android:background="@drawable/grad2"
     android:orientation="vertical"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
@@ -18,9 +18,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+
         android:layout_below="@+id/textView2"
         android:layout_marginTop="100dp"
-        android:background="#789"
+        android:background="@drawable/moorgrad"
         android:firstDayOfWeek="2"
         android:maxDate="06/30/2018"
         android:minDate="05/01/2018"
@@ -42,8 +43,9 @@
         android:layout_height="80sp"
         android:layout_alignStart="@+id/simpleCalendarView"
         android:layout_alignTop="@+id/onClickAlarm"
-        android:background="#202020"
-        android:backgroundTint="#202020"
+        android:background="#434343"
+        android:backgroundTint="#242222"
+        app:cardBackgroundColor="#242222"
         app:cardCornerRadius="12dp">
 
         <TextView
@@ -51,7 +53,7 @@
             android:layout_width="190dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
-            android:background="#202020"
+            android:background="@drawable/deepspacerad"
             android:hint="@string/click_on_any_date"
             android:textColor="#00C040"
             android:textColorHint="#00C040"
